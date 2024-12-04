@@ -1,4 +1,4 @@
-use std::{cmp::Ordering, u8};
+use std::cmp::Ordering;
 
 fn parse_input() -> Vec<Vec<u8>> {
     include_str!("../inputs/input-2.txt").lines()
