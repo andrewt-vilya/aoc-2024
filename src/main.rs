@@ -2,9 +2,11 @@
 
 use std::{env, fmt, time::Instant};
 
+mod util;
 mod day_1;
 mod day_2;
 mod day_3;
+mod day_4;
 
 const USAGE: &str = "Usage: aoc-2024 <day>";
 
@@ -39,6 +41,7 @@ fn main() {
             day_1::main,
             day_2::main,
             day_3::main,
+            day_4::main,
         ];
 
         let start = Instant::now();
@@ -54,6 +57,7 @@ fn main() {
             1 => day_1::main,
             2 => day_2::main,
             3 => day_3::main,
+            4 => day_4::main,
             _ => unimplemented!("day {day} challenge"),
         };
 
