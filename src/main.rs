@@ -7,6 +7,7 @@ mod day_1;
 mod day_2;
 mod day_3;
 mod day_4;
+mod day_5;
 
 const USAGE: &str = "Usage: aoc-2024 <day>";
 
@@ -42,6 +43,7 @@ fn main() {
             day_2::main,
             day_3::main,
             day_4::main,
+            day_5::main,
         ];
 
         let start = Instant::now();
@@ -58,6 +60,7 @@ fn main() {
             2 => day_2::main,
             3 => day_3::main,
             4 => day_4::main,
+            5 => day_5::main,
             _ => unimplemented!("day {day} challenge"),
         };
 
